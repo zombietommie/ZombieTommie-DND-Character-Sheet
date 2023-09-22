@@ -7,20 +7,28 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { HeaderComponent } from './header/header.component';
+import { FrontPageComponent } from './front-page/front-page.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginpageComponent,
     CharacterListComponent,
-    HeaderComponent
+    HeaderComponent,
+    FrontPageComponent,
+    LoginpageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
