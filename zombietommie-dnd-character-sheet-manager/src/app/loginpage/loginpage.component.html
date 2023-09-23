@@ -1,11 +1,14 @@
-<p>loginpage works!</p>
-
-<div>
+<div class="login-block">
+  <p>
+    <mat-label>Login to Character Manager</mat-label>
+  </p>
   <p>
     <mat-form-field appearance="outline">
-      <input matInput placeholder="Username" />
-      <input matInput placeholder="Password" />
-      <button mat-button type="submit">Login</button>
+      <input matInput type="text" placeholder="Username" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <input matInput type="text" placeholder="Password" />
     </mat-form-field>
   </p>
+  <button mat-raised-button color="primary" type="submit">Login</button>
 </div>

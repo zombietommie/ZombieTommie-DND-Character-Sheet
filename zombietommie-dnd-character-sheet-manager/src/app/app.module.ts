@@ -11,6 +11,7 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
     HeaderComponent,
     FrontPageComponent,
     LoginpageComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
