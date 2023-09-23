@@ -12,6 +12,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { FormsModule } from '@angular/forms';
+import { UsermainpageComponent } from './usermainpage/usermainpage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     FrontPageComponent,
     LoginpageComponent,
     PagenotfoundComponent,
+    UsermainpageComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

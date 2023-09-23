@@ -2,13 +2,37 @@
   <p>
     <mat-label>Login to Character Manager</mat-label>
   </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <input matInput type="text" placeholder="Username" />
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <input matInput type="text" placeholder="Password" />
-    </mat-form-field>
-  </p>
-  <button mat-raised-button color="primary" type="submit">Login</button>
+  <form>
+    <p>
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          type="text"
+          placeholder="Username"
+          name="username"
+          [(ngModel)]="username"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <input
+          matInput
+          type="password"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </mat-form-field>
+    </p>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      (click)="onSubmit()"
+    >
+      Login
+    </button>
+    <h3 *ngIf="show">
+      <mat-label>Login Success!!!</mat-label>
+    </h3>
+  </form>
 </div>
