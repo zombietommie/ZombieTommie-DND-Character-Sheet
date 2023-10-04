@@ -15,6 +15,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { FormsModule } from '@angular/forms';
 import { UsermainpageComponent } from './usermainpage/usermainpage.component';
 import { MatTableModule } from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { MatTableModule } from '@angular/material/table';
     MatButtonModule,
     FormsModule,
     MatTableModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
