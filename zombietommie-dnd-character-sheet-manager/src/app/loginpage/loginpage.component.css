@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.login-title {
+  font-size: 35px;
+}
+
 .success-login-text {
   color: green;
   font-size: 30px;
