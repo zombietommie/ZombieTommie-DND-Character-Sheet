@@ -2,7 +2,7 @@
   <p>
     <mat-label>Login to Character Manager</mat-label>
   </p>
-  <mat-card>
+  <mat-card-actions>
     <form>
       <p>
         <mat-form-field appearance="outline">
@@ -34,11 +34,11 @@
       </button>
       <p></p>
       <h3 *ngIf="showSuccess" class="success-login-text">
-        <mat-label>Login Success!!!</mat-label>
+        <mat-card-content>Login Success!!!</mat-card-content>
       </h3>
       <h3 *ngIf="showFailed" class="failed-login-text">
-        <mat-label>Login Failed!!</mat-label>
+        <mat-card-content>Login Failed!!</mat-card-content>
       </h3>
     </form>
-  </mat-card>
+  </mat-card-actions>
 </div>
