@@ -32,8 +32,12 @@
       >
         Login
       </button>
-      <h3 *ngIf="show">
+      <p></p>
+      <h3 *ngIf="showSuccess" class="success-login-text">
         <mat-label>Login Success!!!</mat-label>
+      </h3>
+      <h3 *ngIf="showFailed" class="failed-login-text">
+        <mat-label>Login Failed!!</mat-label>
       </h3>
     </form>
   </mat-card>

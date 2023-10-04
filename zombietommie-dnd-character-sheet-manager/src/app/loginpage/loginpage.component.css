@@ -1,3 +1,13 @@
 .login-block {
   text-align: center;
 }
+
+.success-login-text {
+  color: greenyellow;
+  font-size: 30px;
+}
+
+.failed-login-text {
+  color: red;
+  font-size: 30px;
+}
