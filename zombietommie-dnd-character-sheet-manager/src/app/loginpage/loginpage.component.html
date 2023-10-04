@@ -1,38 +1,46 @@
 <div class="login-block">
-  <p>
-    <mat-label>Login to Character Manager</mat-label>
-  </p>
-  <form>
+  <mat-card-header>
     <p>
-      <mat-form-field appearance="outline">
-        <input
-          matInput
-          type="text"
-          placeholder="Username"
-          name="username"
-          [(ngModel)]="username"
-        />
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <input
-          matInput
-          type="password"
-          placeholder="Password"
-          name="password"
-          [(ngModel)]="password"
-        />
-      </mat-form-field>
+      <mat-label class="login-title">Login to Character Manager</mat-label>
     </p>
-    <button
-      mat-raised-button
-      color="primary"
-      type="submit"
-      (click)="onSubmit()"
-    >
-      Login
-    </button>
-    <h3 *ngIf="show">
-      <mat-label>Login Success!!!</mat-label>
-    </h3>
-  </form>
+  </mat-card-header>
+  <mat-card-actions>
+    <form>
+      <p>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            type="text"
+            placeholder="Username"
+            name="username"
+            [(ngModel)]="username"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            name="password"
+            [(ngModel)]="password"
+          />
+        </mat-form-field>
+      </p>
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        (click)="onSubmit()"
+      >
+        Login
+      </button>
+      <p></p>
+      <h3 *ngIf="showSuccess" class="success-login-text">
+        <mat-card-content>Login Success!!!</mat-card-content>
+      </h3>
+      <h3 *ngIf="showFailed" class="failed-login-text">
+        <mat-card-content>Login Failed!!</mat-card-content>
+      </h3>
+    </form>
+  </mat-card-actions>
 </div>

@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class LoginpageComponent {
   username: string = '';
   password: string = '';
-  show: boolean = false;
+  showSuccess: boolean = false;
+  showFailed: boolean = false;
 
   // need a database that stores usernames and passwords.
   storedUser: string = 'tommy';
@@ -21,16 +22,20 @@ export class LoginpageComponent {
       this.password === this.storedPass
     ) {
       console.log('Login successful');
-      this.show = true;
-      
+      this.clear();
+      this.showSuccess = true;
+
     } else {
       console.log('Login failed, wrong user or password!');
+      this.clear();
+      this.showFailed = true;
     }
-    this.clear();
   }
 
   clear() {
     this.username = '';
     this.password = '';
+    this.showFailed = false;
+    this.showSuccess = false;
   }
 }
