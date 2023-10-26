@@ -24,7 +24,6 @@ export class LoginpageComponent {
       console.log('Login successful');
       this.clear();
       this.showSuccess = true;
-
     } else {
       console.log('Login failed, wrong user or password!');
       this.clear();

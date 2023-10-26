@@ -18,6 +18,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackbarLoginComponent } from './loginpage/snackbar-login/snackbar-login.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { MatIconModule } from '@angular/material/icon';
     LoginpageComponent,
     PagenotfoundComponent,
     UsermainpageComponent,
+    SnackbarLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -36,6 +36,7 @@
       </button>
       <p></p>
       <h3 *ngIf="showSuccess" class="success-login-text">
+        <app-snackbar-login></app-snackbar-login>
         <mat-card-content>Login Success!!!</mat-card-content>
       </h3>
       <h3 *ngIf="showFailed" class="failed-login-text">
