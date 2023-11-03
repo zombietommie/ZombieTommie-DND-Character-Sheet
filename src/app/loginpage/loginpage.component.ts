@@ -17,17 +17,14 @@ export class LoginpageComponent {
   storedPass: string = 'zombie';
 
   onSubmit() {
-    console.log('Username is ' + this.username);
     if (
       this.username === this.storedUser &&
       this.password === this.storedPass
     ) {
-      console.log('Login successful');
       this.result = true;
       this.clear();
       this.showSuccess = true;
     } else {
-      console.log('Login failed, wrong user or password!');
       this.result = false;
       this.clear();
       this.showFailed = true;

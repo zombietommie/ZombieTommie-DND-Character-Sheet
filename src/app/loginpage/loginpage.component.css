@@ -9,9 +9,11 @@
 .success-login-text {
   color: lightgreen;
   font-size: 30px;
+  text-align: center;
 }
 
 .failed-login-text {
   color: red;
   font-size: 30px;
+  text-align: center;
 }
