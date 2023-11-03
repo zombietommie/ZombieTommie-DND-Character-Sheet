@@ -36,7 +36,7 @@
       </button>
       <p></p>
       <h3 *ngIf="showSuccess" class="success-login-text">
-        <app-snackbar-login></app-snackbar-login>
+        <app-snackbar-login [loginResult]="result"></app-snackbar-login>
       </h3>
       <h3 *ngIf="showFailed" class="failed-login-text"></h3>
     </form>

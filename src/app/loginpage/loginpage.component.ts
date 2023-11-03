@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-loginpage',
@@ -6,11 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./loginpage.component.css'],
 })
 export class LoginpageComponent {
-  @Input() loginResult = '';
   username: string = '';
   password: string = '';
   showSuccess: boolean = false;
   showFailed: boolean = false;
+  result: boolean = false;
 
   // need a database that stores usernames and passwords.
   storedUser: string = 'tommy';
@@ -23,10 +23,12 @@ export class LoginpageComponent {
       this.password === this.storedPass
     ) {
       console.log('Login successful');
+      this.result = true;
       this.clear();
       this.showSuccess = true;
     } else {
       console.log('Login failed, wrong user or password!');
+      this.result = false;
       this.clear();
       this.showFailed = true;
     }
