@@ -8,7 +8,7 @@ describe('SnackbarLoginComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SnackbarLoginComponent]
+      declarations: [SnackbarLoginComponent],
     });
     fixture = TestBed.createComponent(SnackbarLoginComponent);
     component = fixture.componentInstance;
