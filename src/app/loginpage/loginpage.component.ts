@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { SnackbarLoginComponent } from './snackbar-login/snackbar-login.component';
 
 @Component({
   selector: 'app-loginpage',
@@ -8,13 +10,13 @@ import { Component } from '@angular/core';
 export class LoginpageComponent {
   username: string = '';
   password: string = '';
-  showSuccess: boolean = false;
-  showFailed: boolean = false;
   result: boolean = false;
 
   // need a database that stores usernames and passwords.
   storedUser: string = 'tommy';
   storedPass: string = 'zombie';
+
+  constructor(private _snackBar: MatSnackBar) {}
 
   onSubmit() {
     if (
@@ -23,18 +25,22 @@ export class LoginpageComponent {
     ) {
       this.result = true;
       this.clear();
-      this.showSuccess = true;
+      this._snackBar.openFromComponent(SnackbarLoginComponent, {
+        duration: 5000,
+        data: this.result,
+      });
     } else {
       this.result = false;
       this.clear();
-      this.showFailed = true;
+      this._snackBar.openFromComponent(SnackbarLoginComponent, {
+        duration: 5000,
+        data: this.result,
+      });
     }
   }
 
   clear() {
     this.username = '';
     this.password = '';
-    this.showFailed = false;
-    this.showSuccess = false;
   }
 }
