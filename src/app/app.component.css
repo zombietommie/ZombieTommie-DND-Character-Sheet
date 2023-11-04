@@ -1,0 +1,9 @@
+.app-div {
+  background-color: rgb(82, 80, 80);
+}
+
+html,
+body,
+div {
+  height: 100%;
+}

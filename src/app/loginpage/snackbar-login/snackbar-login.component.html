@@ -1,0 +1,5 @@
+<span *ngIf="loginResult; else elseFailure" class="show-login-result">
+  Login Successful!
+</span>
+
+<ng-template #elseFailure>Login Failure!</ng-template>
