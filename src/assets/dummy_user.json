@@ -1,0 +1,14 @@
+{
+  "id": "1",
+  "username": "tommy",
+  "password": "zombie",
+  "email": "zombietommie@gmail.com",
+  "perm": "admin"
+},
+{
+  "id": "2",
+  "username": "vickie",
+  "password": "zombie",
+  "email": "zombietommie@gmail.com",
+  "perm": "user"
+},

@@ -8,20 +8,20 @@ import { SnackbarLoginComponent } from './snackbar-login/snackbar-login.componen
   styleUrls: ['./loginpage.component.css'],
 })
 export class LoginpageComponent {
+  // using http client to grab user data
+  mockUsername = 'tommy';
+  mockPassword = 'zombie';
+
   username: string = '';
   password: string = '';
   result: boolean = false;
-
-  // need a database that stores usernames and passwords.
-  storedUser: string = 'tommy';
-  storedPass: string = 'zombie';
 
   constructor(private _snackBar: MatSnackBar) {}
 
   onSubmit() {
     if (
-      this.username === this.storedUser &&
-      this.password === this.storedPass
+      this.username === this.mockUsername &&
+      this.password === this.mockPassword
     ) {
       this.result = true;
       this.clear();
